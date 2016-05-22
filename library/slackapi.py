@@ -100,7 +100,6 @@ class SlackApi(object):
       'as_user': True,
     }
     response = self._request('post', 'chat.postMessage', data=data)
-    print response.text
     return True
 
   """
